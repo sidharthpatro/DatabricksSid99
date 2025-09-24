@@ -1,0 +1,23 @@
+{
+	"name": "Emp_csv",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "httpslinkedservice",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "HttpServerLocation",
+				"relativeUrl": "sidharthpatro/AWRawfile/refs/heads/main/AWRaw/Emp_file.csv"
+			},
+			"columnDelimiter": ",",
+			"rowDelimiter": "\n",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	}
+}
